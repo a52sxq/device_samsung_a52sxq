@@ -18,6 +18,9 @@ DEVICE_PATH := device/samsung/a52sxq
 
 include device/samsung/sm7325-common/BoardConfigCommon.mk
 
+# Board
+TARGET_BOOTLOADER_BOARD_NAME := a52sxq
+
 # Kernel
 TARGET_KERNEL_CONFIG        := vendor/a52sxq_defconfig
 BOARD_NAME                  := SRPUE26A001
