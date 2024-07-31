@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/clover_a52sxq.mk
-
-COMMON_LUNCH_CHOICES := \
-    clover_a52sxq-ap4a-userdebug \
-    clover_a52sxq-ap4a-user \
-    clover_a52sxq-ap4a-eng
