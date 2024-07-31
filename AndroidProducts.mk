@@ -15,8 +15,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/yaap_a52sxq.mk
-
-COMMON_LUNCH_CHOICES := \
-    yaap_a52sxq-userdebug \
-    yaap_a52sxq-user \
-    yaap_a52sxq-eng
