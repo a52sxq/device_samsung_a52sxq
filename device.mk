@@ -21,6 +21,9 @@ DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 # call the common setup
 $(call inherit-product, device/samsung/sm7325-common/common.mk)
 
+# Project ID Quota
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
 # call the proprietary setup
 $(call inherit-product, vendor/samsung/a52sxq/a52sxq-vendor.mk)
 
