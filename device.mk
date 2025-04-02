@@ -16,6 +16,10 @@
 
 DEVICE_PATH := device/samsung/a52sxq
 
+# Core Packages
+PRODUCT_PACKAGES += \
+    Parts
+
 # call the common setup
 $(call inherit-product, device/samsung/sm7325-common/common.mk)
 
