@@ -33,6 +33,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Device specific
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
+TARGET_NO_OEM_UNLOCK := true
 
 # Pixel stuff
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
