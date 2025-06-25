@@ -49,4 +49,8 @@
 
     <!-- Determines whether the shell features all run on another thread. -->
     <bool name="config_enableShellMainThread">true</bool>
+
+<!-- Controls whether compatibility overrides are allowed to force activities
+     to be resizable, even if not declared in their manifest. -->
+<string name="android.window.PROPERTY_COMPAT_ALLOW_RESIZEABLE_ACTIVITY_OVERRIDES">true</string>
 </resources>
