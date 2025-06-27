@@ -21,11 +21,10 @@ $(call inherit-product, device/samsung/a52sxq/device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 
 # Inherit from the common Open Source product configuration
-TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-# Inherit some common Lineage stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Yaap stuff
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -33,22 +32,16 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 # Device specific
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_SUPPORTS_QUICK_TAP := false
-TARGET_FACE_UNLOCK_SUPPORTED := false
-TARGET_NO_OEM_UNLOCK := true
-
-# Pixel stuff
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
-
-# NFC
 TARGET_HAVE_SEC_NFC := true
+TARGET_SUPPORTS_OMX_SERVICE := false
+
+# YAAP Flags
+TARGET_BUILD_GAPPS := true
+TARGET_SUPPORTS_64_BIT_APPS := true
+TARGET_ENABLE_BLUR := true
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_NAME := aosp_a52sxq
+PRODUCT_NAME := yaap_a52sxq
 PRODUCT_DEVICE := a52sxq
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-A528B
