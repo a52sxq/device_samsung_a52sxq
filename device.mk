@@ -16,8 +16,6 @@
 
 DEVICE_PATH := device/samsung/a52sxq
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-
 # call the common setup
 $(call inherit-product, device/samsung/sm7325-common/common.mk)
 
@@ -35,6 +33,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(DEVICE_PATH)/configs/audio/audio_platform_info_diff.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info_diff.xml \
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
 # Sensors
 PRODUCT_COPY_FILES += \
