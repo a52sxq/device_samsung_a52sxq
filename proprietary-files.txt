@@ -168,9 +168,7 @@ vendor/etc/nfc/sec_s3nrn4v_swreg.bin
 vendor/firmware/nfc/sec_s3nrn4v_firmware.bin
 
 # Sensors
-vendor/lib/sensors.grip.so
 vendor/lib/sensors.ssc.so
-vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.ssc.so
 vendor/etc/sensors/config/kodiak_ak991x_0.json
 vendor/etc/sensors/config/kodiak_lsm6dso_0.json
