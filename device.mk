@@ -16,8 +16,6 @@
 
 DEVICE_PATH := device/samsung/a52sxq
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
-
 # call the common setup
 $(call inherit-product, device/samsung/sm7325-common/common.mk)
 
@@ -39,3 +37,6 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     sensors.a52sxq
+
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
