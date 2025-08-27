@@ -46,7 +46,8 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 # Logging
 SPAMMY_LOG_TAGS_S  := \
     QC2Buf \
-    QC2V4l2Codec
+    QC2V4l2Codec \
+    HWUI
 
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_VENDOR_PROPERTIES += \
